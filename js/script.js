@@ -21,9 +21,11 @@ const slider = tns({
             items: 1
         },
         700: {
+            nav: true
         },
         900: {
-          items: 1
+            nav: true,
+            items: 1
         }
     }
 });
