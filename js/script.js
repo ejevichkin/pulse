@@ -14,7 +14,7 @@ const slider = tns({
     slideBy: 'page',
     autoplay: false,
     controls: false,
-    nav: false,
+    nav: true,
     responsive: {
         640: {
             nav: true,
