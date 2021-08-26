@@ -14,7 +14,18 @@ const slider = tns({
     slideBy: 'page',
     autoplay: false,
     controls: false,
-    nav: false
+    nav: false,
+    responsive: {
+        640: {
+            nav: true,
+            items: 1
+        },
+        700: {
+        },
+        900: {
+          items: 1
+        }
+    }
 });
 
 document.querySelector('.prev').addEventListener('click',function () {

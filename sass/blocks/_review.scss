@@ -4,10 +4,9 @@
         flex-direction: row;
     }
     &__photo {
-        margin-top: 60px;
-        margin-right: 60px;
-        width: 169px;
-        height: 169px;
+        margin: 60px 60px 10px 0;
+        max-width: 169px;
+        max-height: 169px;
     }
     &__name {
         margin-top: 60px;
@@ -23,7 +22,7 @@
         color: #646464;
     }
     &__comment {
-        width: 680px;
+        max-width: 680px;
         margin-top: 10px;
         font-weight: 300;
         font-size: 16px;

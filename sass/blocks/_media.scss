@@ -108,4 +108,70 @@
 			margin-top: 10px;
 		}
 	}
+	.consultation{
+		padding: 40px 0 20px 0;
+		h2{
+			text-align: center;
+			font-size: 30px;
+			line-height: 45px;
+		}
+		&__descr {text-align: center;
+			font-size: 16px;
+			padding: 0 10px;
+		}
+		.feed-form {
+			width: auto;
+			margin: 35px;
+			align-items: center;
+			input {
+				width: 300px;
+			}
+		}
+	}
+	.carousel {
+		.tns-nav {
+			display: flex;
+			justify-content: center;
+			button {
+				width: 2px;
+				height: 10px;
+				text-align: center;
+				border-radius: 50%;
+				border: none;
+				margin: 2px;
+			}
+			.tns-nav-active {
+				background-color: gray;
+			}
+			
+		}
+		.prev, .next {
+			display: none;
+		}
+		&__inner {
+			img {
+				width: 80%;
+
+			}
+		}
+	}
+	.catalog {
+		max-width: 320px;
+	}
+	.review {
+		min-width: 320px;
+		&__photo {
+			margin: 10px 10px 0 10px;
+			img	{
+				width: 75px;
+				height: 75px;
+			}
+		}
+		&__name {
+			margin-top: 100px;
+		}
+		&__comment {
+			width: 100%;
+		}
+	}
 }
