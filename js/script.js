@@ -72,4 +72,30 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         })
     });
+
+    function validateForms(form){
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Введите свое имя",
+                phone: "Введите свой номер телефона",
+                email: {
+                  required: "Введите свою почту",
+                  email: "Неправильно введен адрес почты"
+                }
+              }
+        });
+    };
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+    
+    $('input[name=phone]').mask("+7 (999) 999-9999");
 });
