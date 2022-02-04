@@ -1,489 +1,504 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pulse</title>
+    <title>Аренда земли АН "Георесурс"</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <!-- <link rel="stylesheet" href="css/slick.css"/> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.min.css">
-    
 </head>
 <body>
-    <section id="up" class="promo">
+    <header>
         <div class="container">
             <header class="header">
-                <a href="#" class="header__logo">
+                <a href="index.html" class="header__logo col-6">
                     <img src="icons/logo.png" alt="logo">
+                    <div class="name">
+                        <h2>агентство недвижимости</h2>
+                    <h3>георесурс</h3>
+                    </div>
                 </a>
-                <div class="header__official">
-                    Официальный представитель
-                    <span>Garmin, Polar, Suunto</span>
-                </div>
-                <div class="header__contacts">
-                    <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button data-modal="consultation" class="button">заказать звонок</button>
-                </div>
-            </header>
-            <div class="promo__wrapper">
-                <h1 class="promo__header">Подбор пульсометра</h1>
-                <h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
-                <div class="promo__icons">
-                    <div class="promo__icon">
-                        <img src="icons/timer.png" alt="timer">
-                        Время подбора:
-                        10 минут
-                    </div>
-                    <div class="promo__icon">
-                        <img src="icons/delivery.png" alt="delivery">
-                        Бесплатная доставка
-                    </div>
-                    <div class="promo__icon">
-                        <img src="icons/message.png" alt="message">
-                        Ответим на все 
-                        вопросы
-                    </div>
-                </div>
-
-                <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
-                <div class="promo__link">
-                    или
-                    <a href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
-                </div>
-            </div>
-
-            
-        </div>
-    </section>
-
-    <section class="adventages">
-        <div class="container">
-            <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
-            <div class="adventages__wrapper">
-                <div class="adventages__item">
-                    <img src="icons/cup.png" alt="">
-                    <div class="adventages__subtitle">
-                        Делимся опытом
-                    </div>
-                        <div class="adventages__descr">
-                            Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
-                        </div>
-                </div>    
+                <ul class="header__menu col-6">
+                    <li class="header__menu_item"><a href="index.html" class="menu_linked">главная</a></li>
+                    <li class="header__menu_item"><a href="#why" class="menu_link">о нас</a></li>
+                    <li class="header__menu_item"><a href="#rent" class="menu_link">аренда</a></li>
+                    <li class="header__menu_item"><a href="prodazha.html" class="menu_link">продажа</a></li>
+                    <li class="header__menu_item"><a href="#contacts" class="menu_link">контакты</a></li>
+                </ul>
                 
-                <div class="adventages__item">
-                    <img src="icons/heart.png" alt="">
-                    <div class="adventages__subtitle">
-                        Заботимся о здоровье
-                    </div>
-                        <div class="adventages__descr">
-                            Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
-                        </div>
-                </div>    
-
-                <div class="adventages__item">
-                    <img src="icons/shoe.png" alt="">
-                    <div class="adventages__subtitle">
-                        Учим бегать
-                    </div>
-                        <div class="adventages__descr">
-                            Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - 
-                            <a href="#">I LOVE RUNNING.</a>
-                        </div>
-                </div>    
-            </div>
+            </header>
         </div>
-    </section>
-
-    <section class="consultation">
-        <div class="container">
-            <h2 class="title title_left">
-                Получите бесплатную консультацию 
-                <br> по подбору пульсометра 
-            </h2>
-            <div class="consultation__descr">
-                Просто заполните форму заявки 
-                <br> и мы перезвоним вам в течении 10 минут
-            </div>
-            <form id="consultation-form" class="feed-form" action="#">
-                    <input name="name" required placeholder="Ваше имя" type="text">
-                    <input name="phone" required placeholder="Ваш телефон">
-                    <input name="email" required placeholder="Ваш E-mail" type="email">
-                    <button class="button button_submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
-            </form>
-        </div>
-    </section>
-
-    <section class="carousel">
-        <div class="container">
-            <div class="carousel__inner">
-                <div>
-                    <img src="img/slide_1.jpg" alt="slide">
-                </div>
-                <div>
-                    <img src="img/slide_2.jpg" alt="slide">
-                </div>
-                <div>
-                    <img src="img/slide_3.jpg" alt="slide">
-                </div>
-            </div>
-            <button type="button" class="prev"><img src="./icons/left.svg"></button>
-            <button type="button" class="next"><img src="./icons/right.svg"></button>
-        </div>
-    </section>
-
-    <section class="catalog">
-        <div class="container">
-            <h2 class="title" id="catalog">Каталог пульсометров</h2>
-            <ul class="catalog__tabs">
-                <li class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li>
-                <li class="catalog__tab"><div>для бега</div></li>
-                <li class="catalog__tab"><div>для триатлона</div></li>
-            </ul>
-
-            <div class="catalog__content catalog__content_active">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                            
-
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Zalupa F1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Anus v2</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Parasha 2F</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Shluha Gaf</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Sosesh Xuy</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">КУПИТЬ</button>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="catalog__content">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр SexMaster666</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                            
-
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">КУПИТЬ</button>
-                    </div>
-                </div>
-            </div>
-            <div class="catalog__content">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Falos v04ko</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                            
-
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Otkusi kl1tor</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                            
-
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">КУПИТЬ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="review">
-        <div class="container">
-            <h2 class="title">Отзывы клиентов</h2>
-            <div class="review__wrapper">
-                <div class="review__first">
-                    <div class="review__photo"><img src="icons/client1.png" alt=""></div>
-                    <div class="review__content">
-                        <div class="review__name">Ирина Иванченко</div>
-                        <div class="review__subtitle">2 полумарафона</div>
-                        <div class="review__comment">
-                            Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же. <br>
-                            <br>Новые цели - новый гаджет! <br>
-                            <br>Спасибо, RunSmart! 
-                        </div>
-                    </div>
-                </div>
-                <div class="review__second">
-                    <div class="review__photo"><img src="icons/client2.png" alt=""></div>
-                    <div class="review__content">
-                        <div class="review__name">Ирина Иванченко</div>
-                        <div class="review__subtitle">1 полумарафон</div>
-                        <div class="review__comment">
-                            Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. <br>
-                            <br>Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд. <br>
-                            <br>С ними подготовился к своему первому полумарафону! Спасибо!!!
-                        </div>
-                    </div>
-                </div>
-                <div class="review__third">
-                    <div class="review__photo"><img src="icons/client3.png" alt=""></div>
-                    <div class="review__content">
-                        <div class="review__name">Юлия Дашкина</div>
-                        <div class="review__subtitle">2 полумарафона</div>
-                        <div class="review__comment">
-                            Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать. <br>
-                            <br>Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться! <br>
-                            <br>Спасибо!!!
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <h2 class="title">Мы на карте</h2>
-        <div class="footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.212741144853!2d37.88632744660635!3d55.70325824617753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1857ca5fdf4b480c!2z0J7QntCeICog0JLQmNCi0JAqINCw0L_RgtC10LrQsA!5e0!3m2!1sru!2sru!4v1630076294574!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         
-        <div class="footer__info"></div>
-    </footer>
+            
+    </header>
+    <section class="main">
+        <div class="container">
+            <h6>Бесплатный подбор открытых площадок в Москве и ближайшем Подмосковье</h6>
+            <h1>АРЕНДА И ПРОДАЖА ЗЕМЛИ</h1>
+            <h3>ПОД ПРОМЫШЛЕННЫЕ ИЛИ КОММЕРЧЕСКИЕ ЦЕЛИ</h3>
+            <button data-modal="consultation" class="button button_submit">ОСТАВИТЬ ЗАЯВКУ</button>
+        </div>
 
+    </section>
+
+    <section class="places">
+        <div class="container">
+            <div class="title">
+                ОТКРЫТЫЕ ПЛОЩАДКИ
+                ДЛЯ РАЗЛИЧНЫХ ВИДОВ ДЕЯТЕЛЬНОСТИ
+            </div>
+    
+            <div class="row row-cols-md-5 row-cols-sm-3 row-cols-1">
+                <div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Стоянки для автомобилей, автобусов и транспорта.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">АВТОПАРК</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Стоянка для экскаваторов, бульдозеров и спецтехники.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">СТОЯНКА СПЕЦТЕХНИКИ</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div><div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Стоянка для различного вида грузового транспорта.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">СТОЯНКА ГРУЗОВОГО ТРАНСПОРТА</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/4.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Хранение контейнеров на закрытой территории</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">КОНТЕЙНЕРЫ</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/5.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Размещение бетонного завода на долгосрочной основе.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">БЕТОННЫЙ
+                                ЗАВОД</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/6.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Площадки для автошколы для обучения вождению.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">АВТОШКОЛА</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div><div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/7.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Стоянка для коммерческого движимого иммущества.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">ПАРКОВКА КОММЕРЧЕСКОГО ТРАНСПОРТА</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div><div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/8.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Различные быстровозводимые сооружения и металлоконструкции.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">НЕКАПИТАЛЬНЫЕ СООРУЖЕНИЯ</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div><div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/9.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Размещение и эксплуатация обудования для дробления .</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">ДРОБИЛКА</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div><div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/10.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Сортировка и переработка вторсырья и мусора.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">СОРТИРОВКА ВТОРСЫРЬЯ</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/11.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Площадки для эксплуатации воздухоопорных сооружений.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">ВОЗДУХООПОРНЫЕ СПОРТИВНЫЕ СООРУЖЕНИЯ</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div><div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/12.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Складирование стройматериалов, контейнеров и другое.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">РАЗЛИЧНОЕ СКЛАДИРОВАНИЕ</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div><div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/13.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Логистические площадки с подведенной ж/д веткой.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">ПЛОЩАДКИ
+                                С Ж/Д ВЕТКОЙ</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div><div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/14.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Оборудованные грузоподъемным  механизмом площадки.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">ПЛОЩАДКИ С ГРУЗОПОДЪЕМЫМИ МЕХАНИЗМАМИ</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div><div class="col">
+                    <div class="places_item">
+                        <div class="image">
+                            <img src="img/15.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="mobile_item_plus">Площадки для переработки и хранения металлолома.</div>
+                            <hr>
+                            <div class="mobile_item_subtitle">ПЕРЕРАБОТКА МЕТАЛЛОЛОМА</div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <div class="container">
+
+            <div class="title" id="why">
+                ПОЧЕМУ СТОИТ С НАМИ РАБОТАТЬ
+            </div>
+            <div class="subtitle">
+                Мы помогаем клиентам решать вопросы поиска открытых земельных участков для аренды наиболее удобным и 
+                экономически эффективным способом. Наше агентство обладает широкой базой открытых площадок по всей Москве 
+                и в пределах двадцати километров от МКАД. 
+                <br> <br>
+                Важной составляющей является комплексный подход к потребностям клиента, необходимых для успешного развития 
+                предприятия на арендуемом земельном участке.
+            </div>
+
+            <div class="rows">
+                <div class="row col-md-6 col-sm-12">
+                
+                    <div class="reason col-sm-6"><img src="icons/yes.svg" alt="">Прямые взаимодействия с собственниками</div>
+                    <div class="reason col-sm-6"><img src="icons/yes.svg" alt="">Собственная крупная информационная база</div>
+                    <div class="reason col-sm-6"><img src="icons/yes.svg" alt="">Профессиональная команда менеджеров</div>
+                    <div class="reason col-sm-6"><img src="icons/yes.svg" alt="">Бесплатный подбор,без скрытых платежей и комиссий</div>
+                    
+        
+                    </div>
+            </div>
+         </div>   
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="adv">
+                <div class="adv_gray">
+                    <img src="icons/people_1.svg" alt="">
+                    <div class="title">УДОБСТВО <br>
+                        ВЗАИМОДЕЙСТВИЙ</div>
+                        <hr>
+                    <div class="subtitle">Вы ведете прямые переговоры с арендодателями. Мы организуем сопровождение сделки и окажем содействие в размещении предприятия при необходимости.</div>
+                </div>
+                <div class="adv_white">
+                    <img src="icons/prices_1.svg" alt="">
+                    <div class="title">ЦЕНЫ ОТ <br> СОБСТВЕННИКОВ</div> <hr>
+                <div class="subtitle">Цены на аренду открытых площадок предоставляются вам от собственника. Мы не участвуем в ценообразовании.  </div>
+                </div>
+                <div class="adv_white">
+                    <img src="icons/phone_1.svg" alt="">
+                    <div class="title">ОПЕРАТИВНАЯ <br>
+                        ОБРАТНАЯ СВЯЗЬ</div> <hr>
+                    <div class="subtitle">После отправки заявки вы получите готовые варианты в течение нескольких часов.</div>
+                </div>
+                <div class="adv_gray">
+                    <img src="icons/map_1.svg" alt="">
+                    <div class="title">ВСЕГДА АКТУАЛЬНЫЕ <br> ПРЕДЛОЖЕНИЯ</div> <hr>
+                <div class="subtitle">Собственная база объектов, обновляемая ежедневно.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="selection" id="rent">
+        <div class="container">
+            <div class="title">
+                УКАЖИТЕ ПАРАМЕТРЫ ДЛЯ ПОДБОРА ПЛОЩАДКИ
+            </div>
+            <form id="consultation-form" class="feed-form" action="#"></form>
+                <div class="row">
+                    <div class="stroke">
+                        <input name="name" required placeholder="Площадь (от 500м2)" type="text">
+                        <input name="phone" required placeholder="Покрытие" type="text">
+                        <input name="email" required placeholder="Вид деятельности" type="text">
+                    </div>
+                    <div class="stroke">
+                        <input name="name" required placeholder="Расположение" type="text">
+                        <input name="phone" required placeholder="Электроэнергия, квт" type="text">
+                        <input name="email" required placeholder="Другие параметры" type="text">
+                    </div>
+                    <div class="stroke">
+                        <input name="name" required placeholder="Ваше имя" type="text">
+                        <input name="phone" required placeholder="Телефон">
+                        <button class="button button_submit">ОТПРАВИТЬ</button>
+                    </div>
+                </div>   
+            </form>
+            
+        <div class="ussage">
+            <div class="checkbox">
+                <input type="checkbox" class="checkbox" name="a" value="">
+            </div>
+            <div class="ussage_sub">
+                Я даю свое согласие на обработку персональных данных в соответсвии с <br> ФЗ №152-ФЗ "О персональных данных".
+            <a href="policy.html">Условия использования</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="scheme">
+        <div class="container">
+            <div class="title">
+                СХЕМА РАБОТЫ
+            </div>
+            <div class="scheme__work">
+                <div class="scheme__work_gray">
+                    <div class="number">1</div>
+                    <div class="subtitle">
+                        Позвоните  по номеру телефона, указаному в <a href="#">контактах</a> или 
+                        оставьте заявку на сайте.
+                    </div>
+                </div>  
+                <div class="scheme__work_white">
+                    <div class="number">2</div>
+                    <div class="subtitle">
+                        Опишите вашу задачу нашему специалисту.
+                    </div>
+                </div>  
+                <div class="scheme__work_gray">
+                    <div class="number">3</div>
+                    <div class="subtitle">
+                        Специалист подберет для вас актуальные предложения, исходя из вашего вида деятельности.
+                    </div>
+                </div>  
+                <div class="scheme__work_white">
+                    <div class="number">4</div>
+                    <div class="subtitle">
+                        Сообщите нам какие варианты вам подходят.
+                    </div>
+                </div>  
+                <div class="scheme__work_gray">
+                    <div class="number">5</div>
+                    <div class="subtitle">
+                        Мы организуем для вас просмотр выбранных объектов и встречу с собственниками.
+                    </div>
+                </div>  
+                <div class="scheme__work_white">
+                    <div class="number">6</div>
+                    <div class="subtitle">
+                        При необходимости организуем сопровождение сделки и окажем содействие в размещении предприятия
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer_const">
+                <div class="title_1">
+                    <div class="title">ЧТОБЫ СВЯЗАТЬСЯ С НАШИМИ АГЕНТАМИ, <br>
+                        ЗВОНИТЕ ИЛИ ПИШИТЕ:</div>
+                    <div class="subtitle">
+                        <div class="tel">Телефон:<a href="tel:+79697774243" class="header__phone"> +7 (969) 777-42-43</a></div>
+                        <div class="mail">Email:<a href="mailto:info@georesurs.org"> info@georesurs.org</a></div>
+                    </div>
+                </div>
+                <div class="title_2">
+                    <div class="title">
+                        ЗАДАЙТЕ ЛЮБОЙ ВОПРОС И МЫ ОТВЕТИМ В <br> САМОЕ БЛИЖАЙШЕЕ ВРЕМЯ:
+                    </div>
+                    <div class="subtitle">
+                        <div class="subtitle_left">
+                            <input name="name " required placeholder="Ваше имя" type="text">
+                            <input name="phone" required placeholder="Телефон">
+                            <div class="ussage">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox" name="a" value="">
+                                </div>
+                                <div class="ussage_sub">
+                                    Я даю свое согласие на обработку персональных данных в соответсвии с <br> ФЗ №152-ФЗ "О персональных данных".
+                                    <a href="policy.html">Условия использования</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="subtitle_right">
+                            <textarea name="email rows=5 " required placeholder="Сообщение" type="text"></textarea>
+                            <button class="button button_submit">ОТПРАВИТЬ</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
     <div class="overlay">
         <div class="modal" id="consultation">
             <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Просто заполните форму заявки</div>
-            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
-            <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" placeholder="Ваше имя" type="text">
-                <input name="phone" placeholder="Ваш телефон">
-                <input name="email" placeholder="Ваш E-mail" type="email">
-                <button class="button button_submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
-            </form> 
-        </div>
+            <div class="modal__subtitle">Заполните форму</div>
+            <div class="modal__descr">и мы перезвоним Вам в течении 20 минут</div>
+            <form class="feed-form_main mt_25" action="#">
+                <input name="name" required placeholder="Введите Ваше имя" type="text">
+                <input name="phone" required placeholder="Введите Ваш номер телефона">
+                <button class="button">Отправить</button>
+            </form>
 
-        <div class="modal" id="order">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Ваш заказ:</div>
-            <div class="modal__descr">Пульсометр Polar FT1</div>
-            <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" >
-                <input name="email" required placeholder="Ваш E-mail" type="email">
-                <button class="button button_submit">Купить</button>
-            </form> 
-        </div>
-
-        <div class="modal modal_mini" id="thanks">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
-            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
-            </form> 
+            <div class="modal modal_mini mt_25" id="thanks">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Спасибо за Вашу заявку</div>
+                <div class="modal__descr">Мы свяжемся с Вами в ближайшее время!</div>
+            </div>
+             
         </div>
     </div>
-
-    <a href="#up" class="pageup">
-    <img src="icons/up.svg" alt="up">
-    </a>
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- <script src="js/slick.min.js"></script> -->
+       
+    
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
-</html
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда земли АН "Георесурс"</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <header class="header">
+                <a href="index.html" class="header__logo col-6">
+                    <img src="icons/logo.png" alt="logo">
+                    <div class="name">
+                        <h2>агентство недвижимости</h2>
+                    <h3>георесурс</h3>
+                    </div>
+                </a>
+                <ul class="header__menu col-6">
+                    <li class="header__menu_item"><a href="index.html" class="menu_linked">главная</a></li>
+                    <li class="header__menu_item"><a href="index.html#why" class="menu_link">о нас</a></li>
+                    <li class="header__menu_item"><a href="index.html#rent" class="menu_link">аренда</a></li>
+                    <li class="header__menu_item"><a href="prodazha.html" class="menu_link">продажа</a></li>
+                    <li class="header__menu_item"><a href="index.html#contacts" class="menu_link">контакты</a></li>
+                </ul>
+                
+            </header>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+            
+    </header>
+
+    <section class="sale">
+        <div class="container">
+            <div class="sale_dir">
+                <div class="title">
+                    Продажа земли
+                </div>
+                <div class="sale_dir_window">
+                    <!-- slider -->
+                    <div class="carousel__inner">
+                        <div>
+                            <img src="img/road_min.jpg" alt="slide">
+                        </div>
+                        <div>
+                            <img src="img/roadtwo_min.jpg" alt="slide">
+                        </div>
+                        <div>
+                            <img src="img/table_min.png" alt="slide">
+                        </div>
+                        
+                    </div>
+                    <!-- <button type="button" class="prev"><img src="icons/left.svg"></button>
+                        <button type="button" class="next"><img src="icons/right.svg"></button> -->
+                    
+                    <div class="descr">
+                        <div class="lot">
+                          Лот #727
+                        </div>
+                        <div class="title_two">
+                            Площадка с арендаторами, 9 787 м2
+                        </div>
+                        <div class="price">
+                          65 000 000 рублей
+                        </div>
+
+                        <hr>
+
+                        <div class="sub">
+                            <div class="title">
+                              г. Москва, ВАО
+                            </div>
+                            <div class="subtitle">
+                              Земля в аренде бессрочной у Администрации района с 2000 г.
+                              Земли промышленности, по ПЗЗ зона О -1 – многофункциональная общественно-деловая зона...
+                            </div>
+                            <button data-modal="consultation" class="button button_submit">Связаться</button>
+                            <button class="button_a button_submit"><a href="lot-727.html">Подробнее</a> </button>
+                        </div>
+
+                </div>
+
+                      <!-- descr -->
+                      
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer_const">
+                <div class="title_1">
+                    <div class="title">ЧТОБЫ СВЯЗАТЬСЯ С НАШИМИ АГЕНТАМИ, <br>
+                        ЗВОНИТЕ ИЛИ ПИШИТЕ:</div>
+                    <div class="subtitle">
+                        <div class="tel">Телефон:<a href="tel:+79697774243" class="header__phone"> +7 (969) 777-42-43</a></div>
+                        <div class="mail">Email:<a href="mailto:info@georesurs.org"> info@georesurs.org</a></div>
+                    </div>
+                </div>
+                <div class="title_2">
+                    <div class="title">
+                        ЗАДАЙТЕ ЛЮБОЙ ВОПРОС И МЫ ОТВЕТИМ В <br> САМОЕ БЛИЖАЙШЕЕ ВРЕМЯ:
+                    </div>
+                    <div class="subtitle">
+                        <div class="subtitle_left">
+                            <input name="name " required placeholder="Ваше имя" type="text">
+                            <input name="phone" required placeholder="Телефон">
+                            <div class="ussage">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox" name="a" value="">
+                                </div>
+                                <div class="ussage_sub">
+                                    Я даю свое согласие на обработку персональных данных в соответсвии с <br> ФЗ №152-ФЗ "О персональных данных".
+                                    <a href="policy.html">Условия использования</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="subtitle_right">
+                            <textarea name="email rows=5 " required placeholder="Сообщение" type="text"></textarea>
+                            <button class="button button_submit">ОТПРАВИТЬ</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Заполните форму</div>
+            <div class="modal__descr">и мы перезвоним Вам в течении 20 минут</div>
+            <form class="feed-form_main mt_25" action="#">
+                <input name="name" required placeholder="Введите Ваше имя" type="text">
+                <input name="phone" required placeholder="Введите Ваш номер телефона">
+                <button class="button">Узнать цену</button>
+            </form>
+
+            <div class="modal modal_mini mt_25" id="thanks">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Спасибо за Вашу заявку</div>
+                <div class="modal__descr">Фармацевт свяжется с Вами в ближайшее время!</div>
+            </div>
+             
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

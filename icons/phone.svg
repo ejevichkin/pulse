@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="xMidYMid meet" data-bbox="31 43 138 114" viewBox="31 43 138 114" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true"><defs><style>#comp-juk882xn svg [data-color="1"] {fill: #769CCD;}</style></defs>
+    <g>
+        <path d="M157 157H43c-6.617 0-12-5.383-12-12V67c0-6.617 5.383-12 12-12h3v6h-3c-3.309 0-6 2.691-6 6v78c0 3.309 2.691 6 6 6h114c3.309 0 6-2.691 6-6V67c0-3.309-2.691-6-6-6H79v-6h78c6.617 0 12 5.383 12 12v78c0 6.617-5.383 12-12 12z" fill="#3940B2" data-color="1"></path>
+        <path d="M139 97H97a3 3 0 0 1-3-3V79a3 3 0 0 1 3-3h42a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3zm-39-6h36v-9h-36v9z" fill="#3940B2" data-color="1"></path>
+        <path d="M70 145H55c-6.617 0-12-5.383-12-12V55c0-6.617 5.383-12 12-12h15c6.617 0 12 5.383 12 12v78c0 6.617-5.383 12-12 12zM55 49c-3.309 0-6 2.691-6 6v78c0 3.309 2.691 6 6 6h15c3.309 0 6-2.691 6-6V55c0-3.309-2.691-6-6-6H55z" fill="#3940B2" data-color="1"></path>
+        <path fill="#3940B2" d="M109 103v6h-6v-6h6z" data-color="1"></path>
+        <path fill="#3940B2" d="M121 103v6h-6v-6h6z" data-color="1"></path>
+        <path fill="#3940B2" d="M133 103v6h-6v-6h6z" data-color="1"></path>
+        <path fill="#3940B2" d="M109 115v6h-6v-6h6z" data-color="1"></path>
+        <path fill="#3940B2" d="M121 115v6h-6v-6h6z" data-color="1"></path>
+        <path fill="#3940B2" d="M133 115v6h-6v-6h6z" data-color="1"></path>
+        <path fill="#3940B2" d="M109 127v6h-6v-6h6z" data-color="1"></path>
+        <path fill="#3940B2" d="M121 127v6h-6v-6h6z" data-color="1"></path>
+        <path fill="#3940B2" d="M133 127v6h-6v-6h6z" data-color="1"></path>
+    </g>
+</svg>
